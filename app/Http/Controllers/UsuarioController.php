@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Imovel;
 use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
@@ -21,3 +22,4 @@ class UsuarioController extends Controller
         return view('usuario/cadastro');
     }
 }
+

@@ -5,14 +5,14 @@ use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\ImoveisController;
 
 
-Route::get('/usuario/home', [UsuarioController::class, 'homeView']);
+Route::get('/', [UsuarioController::class, 'homeView']);
 
 Route::get('/usuario/login', [UsuarioController::class, 'loginView']);
 
 Route::get('/usuario/cadastro', [UsuarioController::class, 'cadastroView']);
 
 
-Route::get('/imoveis/imovel', [ImoveisController::class, 'livrosView']);
+Route::get('/imoveis/imovel', [ImoveisController::class, 'imovelView']);
 
 Route::get('/imoveis/imoveis_usuario', [ImoveisController::class, 'imoveis_usuarioView']);
 
